@@ -11,6 +11,10 @@ The reads for one training dataset were simulated using Wessim (REF) while those
 ## Pipeline
 The H3ABioNet have developed some [standard operating procedures (SOPs)](https://h3abionet.github.io/H3ABionet-SOPs/Variant-Calling) for the H3Africa Consortium. *icipe* node recently participated in the accreditation exercise, where they established a pipeline using the Jupyter Notebooks and Conda for package management. Although well documented and reproducible, it is not easily portable to other systems. This mini-project entails converting the pipeline to either Nextflow or snakemake. The current pipeline tested various tools for the same task; for example, we used both GATK and Freebayes for variant calling. The pipeline you create should be flexible enough to accommodate the various tools utilised in the provided pipeline. 
 
+Find below the pipeline we used for our node accreditation:
+
+![Variant_Calling](Figure/Variant_Pipeline.png)
+
 ## Project Task
 1. Reproduce the pipeline by setting up the workspace in the system you will be using
 2. Convert the pipeline into Nextflow or Snakemake
